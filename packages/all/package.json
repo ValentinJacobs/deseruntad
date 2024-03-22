@@ -1,0 +1,77 @@
+{
+  "name": "@js-random/all",
+  "version": "0.3.1",
+  "description": "A collection of simple and lightweight randomizers for JavaScript (TypeScript friendly)",
+  "author": "Raiondesu <a.raiondesu@gmail.com>",
+  "homepage": "https://github.com/Raiondesu/js-random/tree/master/packages/all#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "module/index.js",
+  "unpkg": "unpkg/index.js",
+  "directories": {
+    "lib": "lib",
+    "types": "types",
+    "module": "module",
+    "unpkg": "unpkg",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "module",
+    "unpkg",
+    "index.ts",
+    "global.ts"
+  ],
+  "types": "lib/index.d,ts",
+  "typings": "lib/index.d.ts",
+  "keywords": [
+    "js",
+    "ts",
+    "typescript",
+    "javascript",
+    "string",
+    "number",
+    "boolean",
+    "array",
+    "random",
+    "simple",
+    "lightweight",
+    "es5",
+    "JSON",
+    "definetly-typed",
+    "modular",
+    "monorepo",
+    "micropackage"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raiondesu/random-something.git"
+  },
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:module && npm run build:unpkg",
+    "build:cjs": "tsc -p ./tsconfig.json",
+    "build:module": "tsc -p ./tsconfig.module.json",
+    "build:unpkg": "tsc -p ./tsconfig.unpkg.json && npm run rollup",
+    "rollup": "rollup -c ../../rollup.config.js --name random",
+    "preversion": "npm run build"
+  },
+  "bugs": {
+    "url": "https://github.com/Raiondesu/random-something/issues"
+  },
+  "dependencies": {
+    "@js-random/boolean": "^0.3.1",
+    "@js-random/date": "^0.3.1",
+    "@js-random/number": "^0.3.1",
+    "@js-random/string": "^0.3.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "rollup": "^1.7.3",
+    "rollup-plugin-commonjs": "^9.2.2",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-typescript": "^1.0.1",
+    "typescript": "^3.3.4000"
+  }
+}

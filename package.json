@@ -1,0 +1,48 @@
+{
+  "name": "deseruntad",
+  "description": "A collection of simple and lightweight randomizers for JavaScript (TypeScript friendly)",
+  "scripts": {
+    "test": "test",
+    "lerna": "lerna",
+    "build": "lerna run build",
+    "bootstrap": "lerna bootstrap --hoist --nohoist=@js-random/* --force-local",
+    "publish": "lerna publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ValentinJacobs/deseruntad.git"
+  },
+  "keywords": [
+    "js",
+    "ts",
+    "typescript",
+    "javascript",
+    "molestiae",
+    "id",
+    "boolean",
+    "array",
+    "random",
+    "atque",
+    "lightweight",
+    "es5",
+    "quibusdam",
+    "possimus",
+    "modular",
+    "voluptatem",
+    "micropackage"
+  ],
+  "author": "MajorMcLaughlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ValentinJacobs/deseruntad.git/issues"
+  },
+  "homepage": "https://github.com/ValentinJacobs/deseruntad.git",
+  "devDependencies": {
+    "lerna": "^3.13.1",
+    "rollup-plugin-commonjs": "^9.2.2",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-typescript": "^1.0.1",
+    "typescript": "^3.3.4000"
+  },
+  "version": "1.0.0"
+}
